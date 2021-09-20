@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css" : "tailwindcss -i src/style.css -o dist/tailwind.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/ramandamaulana/ramtailwind/issues"
   },
-  "homepage": "https://github.com/ramandamaulana/ramtailwind#readme"
+  "homepage": "https://github.com/ramandamaulana/ramtailwind#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
+  }
 }
